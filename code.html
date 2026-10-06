@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Brisset - Portfolio BUT GMP </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0d253a',
+              deep: '#081726',
+              industrial: '#1e3a5f',
+              accent: '#ea580c',
+              accentHover: '#c2410c',
+              metal: '#64748b',
+              lightMetal: '#f1f5f9',
+              borderSteel: '#cbd5e1'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-grid-pattern {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(226, 232, 240, 0.4) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+    }
+    .blueprint-pattern {
+      background-size: 20px 20px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="#accueil" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-lg bg-brand-navy flex items-center justify-center text-white shadow-sm border border-slate-700 group-hover:bg-brand-accent transition-colors font-bold">
+            PB
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-bold text-xl tracking-tight text-brand-navy">PAUL BRISSET</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-100 text-slate-700 rounded border border-slate-300">BUT 3</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium">Génie Mécanique et Productique</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-600">
+          <a href="#accueil" class="hover:text-brand-accent transition-colors">Accueil</a>
+          <a href="#video-pitch" class="hover:text-brand-accent transition-colors flex items-center gap-1.5">
+            <i class="fa-regular fa-circle-play text-brand-accent"></i> Vidéo Pitch
+          </a>
+          <a href="#competences" class="hover:text-brand-accent transition-colors">Compétences</a>
+          <a href="#projets" class="hover:text-brand-accent transition-colors">Projets</a>
+          <a href="#cv" class="hover:text-brand-accent transition-colors">Curriculum Vitae</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center space-x-4">
+          <a href="#contact" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold rounded-lg bg-brand-navy text-white hover:bg-brand-accent transition-colors shadow-sm">
+            <i class="fa-regular fa-envelope mr-2"></i> Prendre Contact
+          </a>
+        </div>
+
+        <button id="mobileMenuBtn" aria-label="Menu" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+      <a href="#accueil" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">Accueil</a>
+      <a href="#video-pitch" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">Vidéo de présentation</a>
+      <a href="#competences" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">Compétences</a>
+      <a href="#projets" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">Projets</a>
+      <a href="#cv" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">Mon CV</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md font-medium bg-brand-navy text-white text-center">Contacter</a>
+    </div>
+  </header>
+
+  <section id="accueil" class="relative bg-white border-b border-slate-200 overflow-hidden bg-grid-pattern py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-800 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            Recherche contrat d'alternance en bureau d'études ou méthodes
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-brand-navy tracking-tight leading-tight">
+            Paul Brisset, étudiant en Génie Mécanique et Productique.
+          </h1>
+          
+          <p class="text-lg text-slate-600 leading-relaxed font-normal">
+            Bienvenue sur mon portfolio technique. Actuellement en formation à Orléans, je combine la programmation sur Creo pour la création et l'assemblage de pièces 3D avec les méthodes de fabrication et la métrologie appliquée.
+          </p>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="inline-flex items-center text-xs font-mono bg-slate-100 text-slate-700 px-3 py-1.5 rounded border border-slate-200">
+              PTC Creo 3D
+            </span>
+            <span class="inline-flex items-center text-xs font-mono bg-slate-100 text-slate-700 px-3 py-1.5 rounded border border-slate-200">
+              Métrologie SIM
+            </span>
+            <span class="inline-flex items-center text-xs font-mono bg-slate-100 text-slate-700 px-3 py-1.5 rounded border border-slate-200">
+              Tolérancement ISO
+            </span>
+            <span class="inline-flex items-center text-xs font-mono bg-slate-100 text-slate-700 px-3 py-1.5 rounded border border-slate-200">
+              Pack Office
+            </span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#video-pitch" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-brand-accent text-white font-semibold hover:bg-brand-accentHover shadow-md transition-all">
+              <i class="fa-solid fa-play mr-2 text-sm"></i> Visionner ma vidéo pitch
+            </a>
+            <a href="cv.pdf" download="CV_Paul_Brisset.pdf" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-slate-100 text-slate-800 font-semibold hover:bg-slate-200 border border-slate-300 transition-all">
+              <i class="fa-solid fa-file-pdf mr-2 text-slate-600"></i> Télécharger mon CV
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-brand-navy rounded-2xl p-6 shadow-xl border border-slate-700 text-white relative blueprint-pattern">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-5">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-slate-400 font-mono">Fiche Candidat</span>
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  Profil Paul Brisset
+                </h3>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-mono bg-emerald-500/20 text-emerald-300 rounded border border-emerald-500/40">Alternance 3ème Année</span>
+            </div>
+
+            <div class="space-y-4 text-xs font-mono">
+              <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
+                <span class="text-slate-400">Objectif :</span>
+                <span class="text-slate-100">Bureau d'études / Méthodes</span>
+              </div>
+              <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
+                <span class="text-slate-400">Âge :</span>
+                <span class="text-slate-100">20 ans (08/09/2005)</span>
+              </div>
+              <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
+                <span class="text-slate-400">Adresse :</span>
+                <span class="text-slate-100">5 rue de la Planche, 37230 Fondettes</span>
+              </div>
+              <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
+                <span class="text-slate-400">Téléphone :</span>
+                <span class="text-slate-100">06 09 68 02 36</span>
+              </div>
+              <div class="flex justify-between items-center py-1.5">
+                <span class="text-slate-400">Courriel :</span>
+                <span class="text-amber-300">paul.brs37@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-700/80 flex items-center justify-between">
+              <div>
+                <p class="text-xs text-slate-400 font-sans">Permis de conduire</p>
+                <p class="text-sm font-bold text-white font-mono">Permis B</p>
+              </div>
+              <a href="#cv" class="text-xs font-medium text-brand-accent hover:underline flex items-center gap-1 font-sans">
+                Voir le CV détaillé <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="video-pitch" class="py-16 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-brand-accent uppercase tracking-wider text-xs font-mono font-bold">Vidéo Pitch et Présentation</span>
+        <h2 class="text-3xl font-bold mt-2">Mon parcours et ma démarche en 2 minutes</h2>
+        <p class="text-slate-400 mt-3 text-sm">
+          Cette vidéo résume mes aptitudes techniques, mon autonomie de travail et ma motivation pour l'alternance en entreprise.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <div class="lg:col-span-8 bg-black rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
+          <div class="relative aspect-video flex items-center justify-center bg-slate-950 group">
+            
+            <div id="videoPlaceholder" class="absolute inset-0 bg-cover bg-center flex flex-col justify-between p-6" style="background-image: linear-gradient(rgba(13,37,58,0.7), rgba(8,23,38,0.9)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80');">
+              <div class="flex justify-between items-center text-xs font-mono">
+                <span class="px-2.5 py-1 rounded bg-black/60 backdrop-blur border border-white/20 text-white">PORTFOLIO PAUL BRISSET</span>
+                <span id="videoCurrentTime" class="px-2 py-0.5 rounded bg-black/60 text-slate-300">00:00 / 02:18</span>
+              </div>
+              <div class="text-center space-y-2">
+                <p id="videoActiveTitle" class="text-lg font-semibold text-white drop-shadow">Chapitre 1 : Présentation personnelle</p>
+                <p id="videoActiveSubtitle" class="text-xs text-slate-300">Parcours académique en Génie Mécanique et Productique</p>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Résolution : 1080p</span>
+                <span>Projet BUT 3</span>
+              </div>
+            </div>
+
+            <button id="playPauseBtn" class="z-20 w-20 h-20 rounded-full bg-brand-accent/90 hover:bg-brand-accent text-white flex items-center justify-center text-2xl shadow-xl transition-transform transform hover:scale-105">
+              <i id="playIcon" class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <div id="videoOverlayStatus" class="hidden absolute top-4 right-4 z-20 bg-emerald-500 text-white text-xs px-3 py-1 rounded font-mono">
+              Lecture simulée en cours
+            </div>
+          </div>
+
+          <div class="p-4 bg-slate-950 border-t border-slate-800 space-y-3">
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden cursor-pointer" id="progressBarContainer">
+              <div id="progressBar" class="bg-brand-accent h-full w-0 transition-all duration-300"></div>
+            </div>
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <div class="flex items-center space-x-4">
+                <button id="playSmallBtn" class="text-white hover:text-brand-accent"><i class="fa-solid fa-play"></i></button>
+                <span id="timerDisplay">00:00 / 02:18</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="hover:text-white cursor-pointer"><i class="fa-solid fa-volume-high"></i></span>
+                <span class="hover:text-white cursor-pointer"><i class="fa-solid fa-expand"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 space-y-4">
+          <div class="bg-slate-800/90 rounded-xl p-5 border border-slate-700">
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 font-mono flex items-center justify-between">
+              Chapitres de la vidéo <i class="fa-solid fa-list-ol text-brand-accent"></i>
+            </h4>
+            
+            <div class="space-y-2">
+              <button onclick="selectChapter(1, '00:00', 'Présentation personnelle', 'Parcours académique en Génie Mécanique et Productique')" class="chapter-btn w-full text-left p-3 rounded-lg bg-slate-700/60 hover:bg-slate-700 border border-slate-600 transition flex items-start gap-3">
+                <span class="text-xs font-mono text-brand-accent font-bold mt-0.5">01</span>
+                <div>
+                  <p class="text-xs font-semibold text-white">Mon parcours</p>
+                  <p class="text-[11px] text-slate-400">Polytech Tours et cursus BUT GMP à Orléans</p>
+                </div>
+              </button>
+
+              <button onclick="selectChapter(2, '00:45', 'Stage en métrologie SIM', 'Contrôle tridimensionnel et instruments de précision à Châtellerault')" class="chapter-btn w-full text-left p-3 rounded-lg bg-slate-800 hover:bg-slate-700/60 border border-slate-700 transition flex items-start gap-3">
+                <span class="text-xs font-mono text-brand-accent font-bold mt-0.5">02</span>
+                <div>
+                  <p class="text-xs font-semibold text-white">Stage en métrologie</p>
+                  <p class="text-[11px] text-slate-400">Expérience professionnelle chez SIM à Châtellerault</p>
+                </div>
+              </button>
+
+              <button onclick="selectChapter(3, '01:30', 'Projet Œuf Mystère', 'Conception Creo et fabrication d\'atelier')" class="chapter-btn w-full text-left p-3 rounded-lg bg-slate-800 hover:bg-slate-700/60 border border-slate-700 transition flex items-start gap-3">
+                <span class="text-xs font-mono text-brand-accent font-bold mt-0.5">03</span>
+                <div>
+                  <p class="text-xs font-semibold text-white">Projet Œuf Mystère</p>
+                  <p class="text-[11px] text-slate-400">Modélisation et validation dimensionnelle</p>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-brand-industrial/40 rounded-xl p-4 border border-blue-900 text-xs text-slate-300 space-y-2">
+            <p class="font-bold text-white flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-info text-sky-400"></i> Intégration vidéo :
+            </p>
+            <p class="leading-relaxed">
+              Ce lecteur interactif permet de visionner le pitch et de naviguer par points clés. Il peut être lié directement à un fichier mp4 ou une vidéo hébergée.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="competences" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-16">
+        <span class="text-brand-accent font-mono text-xs uppercase tracking-wider font-bold">Capacités Techniques et Atouts</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy mt-1">Savoir-faire appliqué et profil professionnel</h2>
+        <p class="text-slate-600 mt-2">
+          Compétences techniques acquises en formation universitaire et qualités forgées par le travail en milieu professionnel.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow relative">
+          <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center text-xl mb-4 border border-blue-100">
+            <i class="fa-solid fa-bezier-curve"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy">Conception 3D sur Creo</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">PTC Creo Parametric</p>
+          
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Création de pièces mécaniques en trois dimensions.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Gestion des contraintes d'assemblage entre composants.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Mise en plan et respect des règles de cotation fonctionnelle.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow relative">
+          <div class="w-12 h-12 rounded-lg bg-orange-50 text-brand-accent flex items-center justify-center text-xl mb-4 border border-orange-100">
+            <i class="fa-solid fa-arrows-to-dot"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy">Métrologie et Contrôle</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">Stage SIM Châtellerault</p>
+          
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Mesure sur machine à mesurer tridimensionnelle avec palpage.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Contrôle d'atelier avec colonnes de mesure et micromètres.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Vérification des spécifications géométriques selon les normes ISO.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow relative">
+          <div class="w-12 h-12 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-xl mb-4 border border-slate-200">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy">Méthodes et Fabrication</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">Atelier GMP</p>
+          
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Élaboration des gammes d'usinage en tournage et fraisage.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Choix des outils coupants et conditions de coupe adaptées.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Suivi des tolérances d'ajustement pour l'assemblage.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow relative">
+          <div class="w-12 h-12 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-xl mb-4 border border-slate-200">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy">Bureautique et Suivi</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">Outils de synthèse</p>
+          
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Maîtrise du Pack Office pour la rédaction de comptes rendus.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Traitement des données de mesure et tableaux de synthèse sous Excel.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Préparation des supports de présentation technique sous PowerPoint.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow relative">
+          <div class="w-12 h-12 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-xl mb-4 border border-slate-200">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy">Codes Professionnels</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">Expérience de terrain</p>
+          
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Sens de la ponctualité et respect des engagements pris.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Habitude du travail en équipe et coordination sous forte activité.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Prise d'initiative et recherche d'efficacité dans les tâches confiées.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow relative">
+          <div class="w-12 h-12 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-xl mb-4 border border-slate-200">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy">Qualités Personnelles</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">Savoir-être</p>
+          
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Autonomie et rigueur dans le travail réalisé.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Persévérance face aux problématiques dimensionnelles ou d'usinage.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+              <span>Profil manuel, dynamique et très investi au quotidien.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projets" class="py-20 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-10">
+        <span class="text-brand-accent font-mono text-xs uppercase tracking-wider font-bold">Réalisations Mécaniques</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy mt-1">Projets d'études et réalisations d'atelier</h2>
+        <p class="text-slate-600 text-sm mt-1">Mise en application pratique de la conception à la métrologie.</p>
+      </div>
+
+      <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="project-card bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-slate-900 via-brand-navy to-slate-950 relative overflow-hidden group flex items-center justify-center p-4">
+            <svg viewBox="0 0 400 220" class="w-full h-full text-brand-accent/70 group-hover:scale-105 transition duration-500" fill="none" stroke="currentColor">
+              <defs>
+                <pattern id="eggCadGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#eggCadGrid)" />
+              <line x1="200" y1="15" x2="200" y2="205" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6,4" />
+              <line x1="80" y1="125" x2="320" y2="125" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6,4" />
+              <path d="M 200,25 C 265,25 305,95 305,145 C 305,185 260,200 200,200 C 140,200 95,185 95,145 C 95,95 135,25 200,25 Z" stroke="#f97316" stroke-width="2.5" />
+              <path d="M 200,45 C 245,45 285,100 285,145 C 285,178 245,185 200,185 C 155,185 115,178 115,145 C 115,100 155,45 200,45 Z" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4,3" />
+              <ellipse cx="200" cy="125" rx="90" ry="16" stroke="#94a3b8" stroke-width="1.5" />
+              <ellipse cx="200" cy="85" rx="68" ry="11" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+              <ellipse cx="200" cy="165" rx="72" ry="12" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+              <circle cx="200" cy="125" r="14" stroke="#f97316" stroke-width="2" />
+              <line x1="200" y1="100" x2="200" y2="150" stroke="#f97316" stroke-width="2" />
+              <line x1="175" y1="125" x2="225" y2="125" stroke="#f97316" stroke-width="2" />
+              <text x="310" y="40" fill="#38bdf8" font-size="11" font-family="monospace">R12.5</text>
+              <text x="315" y="130" fill="#f97316" font-size="11" font-family="monospace">H7/g6</text>
+              <text x="25" y="30" fill="#94a3b8" font-size="10" font-family="monospace">MODÈLE CAO CREO 3D</text>
+            </svg>
+            <div class="absolute top-3 left-3 bg-brand-navy/90 text-white text-[11px] font-mono px-2 py-0.5 rounded border border-white/20">
+              Projet Majeur BUT 2
+            </div>
+            <div class="absolute bottom-3 right-3 bg-brand-accent text-white text-[11px] font-mono px-2 py-0.5 rounded">
+              PTC Creo 3D
+            </div>
+          </div>
+          
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono text-slate-400 mb-1">CONCEPTION ET FABRICATION</div>
+              <h3 class="text-lg font-bold text-brand-navy leading-snug">Projet Œuf Mystère de 2ème année</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Modélisation sous Creo de l'ensemble des composants et du mécanisme de verrouillage interne. Définition des ajustements précis pour garantir l'ouverture et la fermeture sans jeu excessif.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-500">Usinage et assemblage</span>
+              <button onclick="openProjectModal('oeuf')" class="text-xs font-bold text-brand-accent hover:text-brand-accentHover flex items-center gap-1">
+                Fiche technique <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-48 bg-slate-800 relative overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80" alt="Machine à mesurer tridimensionnelle MMT" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 left-3 bg-brand-navy/90 text-white text-[11px] font-mono px-2 py-0.5 rounded border border-white/20">
+              Entreprise SIM
+            </div>
+            <div class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[11px] font-mono px-2 py-0.5 rounded">
+              Contrôle MMT
+            </div>
+          </div>
+          
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono text-slate-400 mb-1">STAGE AVRIL - JUIN 2026</div>
+              <h3 class="text-lg font-bold text-brand-navy leading-snug">Contrôle dimensionnel au laboratoire de métrologie</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Mise en œuvre des protocoles de mesure tridimensionnelle pour vérifier la conformité des séries usinées. Mesure des écarts de forme et rédaction des comptes rendus d'analyse.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-500">Châtellerault</span>
+              <button onclick="openProjectModal('stage')" class="text-xs font-bold text-brand-accent hover:text-brand-accentHover flex items-center gap-1">
+                Fiche technique <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cv" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
+        <div>
+          <span class="text-brand-accent font-mono text-xs uppercase tracking-wider font-bold">Document de Synthèse</span>
+          <h2 class="text-3xl font-extrabold text-brand-navy mt-1">Curriculum Vitae</h2>
+          <p class="text-slate-600 text-sm mt-1">Reproduction exacte de la structure et du contenu de mon CV.</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="cv.pdf" download="CV_Paul_Brisset.pdf" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-brand-navy text-white text-xs font-semibold hover:bg-brand-accent transition shadow-sm">
+            <i class="fa-solid fa-file-pdf mr-2"></i> Télécharger le CV (PDF)
+          </a>
+          <a href="#contact" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 border border-slate-300 transition">
+            <i class="fa-regular fa-comment-dots mr-2"></i> Me contacter
+          </a>
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-slate-300 shadow-xl overflow-hidden font-sans">
+        <div class="grid grid-cols-1 md:grid-cols-12">
+          
+          <div class="md:col-span-4 bg-[#1b3a57] text-white p-6 sm:p-8 flex flex-col justify-between space-y-6">
+            <div class="space-y-6">
+              <div class="w-32 h-40 mx-auto rounded-lg overflow-hidden border-2 border-white/40 shadow-md bg-slate-700">
+                <img src="photo_paul_brisset.png" alt="Photo Paul Brisset" class="w-full h-full object-cover">
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold tracking-tight text-white leading-tight">Paul Brisset</h3>
+              </div>
+
+              <div class="space-y-1 text-xs text-slate-200 leading-snug">
+                <p>Recherche un contrat d'alternance en bureau d'études/méthodes pour la 3ème année de mon cursus de Génie Mécanique et Productique</p>
+              </div>
+
+              <div class="space-y-1 text-xs text-slate-300 pt-2 border-t border-white/20">
+                <p>5 rue de la Planche</p>
+                <p>37230 Fondettes</p>
+                <p>20 ans</p>
+                <p>Né le 08/09/2005</p>
+              </div>
+
+              <div class="space-y-1 text-xs text-slate-200 pt-2 border-t border-white/20">
+                <p>Programmation sur CREO pour création de pièces en 3D, assemblage entre elles.</p>
+                <p class="pt-1">Maîtrise pack office.</p>
+              </div>
+
+              <div class="text-xs text-slate-200 pt-2 border-t border-white/20 leading-relaxed">
+                Confiez-moi un projet d'entreprise pour professionnalisation de mon cursus universitaire au sein d'un bureau d'étude/méthodes.
+              </div>
+            </div>
+
+            <div class="space-y-2 text-xs text-slate-200 pt-4 border-t border-white/20 font-mono">
+              <p class="flex items-center gap-2">
+                <i class="fa-solid fa-id-card text-brand-accent"></i> Permis B
+              </p>
+              <p class="flex items-center gap-2">
+                <i class="fa-solid fa-phone text-brand-accent"></i> 06 09 68 02 36
+              </p>
+              <p class="flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-brand-accent"></i> paul.brs37@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="md:col-span-8 p-6 sm:p-8 space-y-6 text-slate-800">
+            
+            <div>
+              <h4 class="text-base font-bold text-[#1b3a57] border-b-2 border-[#1b3a57] pb-1 mb-3 uppercase tracking-wide">Formation</h4>
+              <div class="space-y-3 text-xs leading-relaxed">
+                <div>
+                  <p class="font-bold text-slate-900">Actuellement en 3ème année BUT Génie Mécanique et productique, Orléans, Loiret</p>
+                </div>
+                <div>
+                  <p class="text-slate-800"><span class="font-bold">2024 :</span> 1ère année école d'ingénieur Polytech Tours</p>
+                </div>
+                <div>
+                  <p class="text-slate-800"><span class="font-bold">2023 :</span> Bac spécialités math et physique-chimie</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-base font-bold text-[#1b3a57] border-b-2 border-[#1b3a57] pb-1 mb-3 uppercase tracking-wide">Expériences</h4>
+              <div class="space-y-3 text-xs leading-relaxed">
+                <div>
+                  <p class="font-bold text-slate-900">Avril-Juin 2026</p>
+                  <p class="text-slate-700">Stage au sein du service métrologie SIM, Châtellerault</p>
+                </div>
+                <div>
+                  <p class="font-bold text-slate-900">Décembre 2022 - maintenant</p>
+                  <p class="text-slate-700">Pizzaïolo vendredi et samedi soir La PICCOLA, Fondettes</p>
+                </div>
+                <div>
+                  <p class="font-bold text-slate-900">Juillet - août 2023/2024/2025</p>
+                  <p class="text-slate-700">Pizzaïolo Restaurant Chez Peyo, Royan</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-base font-bold text-[#1b3a57] border-b-2 border-[#1b3a57] pb-1 mb-3 uppercase tracking-wide">Compétences :</h4>
+              <div class="grid grid-cols-2 gap-1 text-xs text-slate-700">
+                <p>Prise d'initiative</p>
+                <p>Autonomie</p>
+                <p>Rigueur</p>
+                <p>Persévérance</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded border border-slate-200 text-xs text-slate-700 leading-relaxed italic">
+              Ayant toujours travaillé en parallèle de ma scolarité, je maîtrise les codes du milieu professionnel ; j'apprécie la complémentarité entre études et travail en entreprise.
+            </div>
+
+            <div>
+              <h4 class="text-base font-bold text-[#1b3a57] border-b-2 border-[#1b3a57] pb-1 mb-2 uppercase tracking-wide">Mes atouts</h4>
+              <p class="text-xs text-slate-700">Dynamique, manuel, ponctuel et investi</p>
+            </div>
+
+            <div>
+              <h4 class="text-base font-bold text-[#1b3a57] border-b-2 border-[#1b3a57] pb-1 mb-2 uppercase tracking-wide">Centres d'intérêts</h4>
+              <p class="text-xs text-slate-700">Passionné de sport, Motocross, BMX, Course à pied, Tennis</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-brand-accent font-mono text-xs uppercase tracking-wider font-bold">Contact</span>
+          <h2 class="text-3xl font-extrabold text-white">Échanger au sujet d'une opportunité d'alternance</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Je suis disponible pour échanger sur votre besoin au sein de votre bureau d'études ou de votre service méthodes pour ma troisième année de BUT GMP.
+          </p>
+
+          <div class="space-y-4 pt-4 text-xs font-mono">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-accent">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-slate-400">Courriel</p>
+                <p class="text-white font-bold">paul.brs37@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-accent">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-slate-400">Ligne directe</p>
+                <p class="text-white font-bold">06 09 68 02 36</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-accent">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="text-slate-400">Localisation</p>
+                <p class="text-white font-bold">5 rue de la Planche, 37230 Fondettes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+          <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Votre Nom et Prénom</label>
+                <input type="text" required placeholder="ex. Jean Dupont" class="w-full px-3 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Entreprise</label>
+                <input type="text" required placeholder="Nom de l'entreprise" class="w-full px-3 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Adresse Email</label>
+                <input type="email" required placeholder="contact@entreprise.fr" class="w-full px-3 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Objet</label>
+                <input type="text" value="Offre d'alternance BUT GMP" class="w-full px-3 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Message</label>
+              <textarea rows="4" required placeholder="Précisez ici les missions ou détails du projet..." class="w-full px-3 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+              <button type="submit" class="px-6 py-3 rounded-lg bg-brand-accent hover:bg-brand-accentHover text-white font-semibold text-xs uppercase tracking-wider transition shadow-md flex items-center gap-2">
+                <i class="fa-regular fa-paper-plane"></i> Envoyer le message
+              </button>
+            </div>
+          </form>
+
+          <div id="formSuccessNotice" class="hidden mt-4 p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-xs flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+            <span>Votre message a bien été transmis. Je vous répondrai dans les meilleurs délais.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-brand-deep text-slate-400 py-10 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-2">
+        <span class="font-bold text-white tracking-tight">PAUL BRISSET</span>
+        <span>Portfolio BUT Génie Mécanique et Productique</span>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#accueil" class="hover:text-white transition">Haut de page <i class="fa-solid fa-arrow-up ml-1"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="projectModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+      
+      <div class="p-6 border-b border-slate-200 flex items-center justify-between sticky top-0 bg-white z-10">
+        <div>
+          <span id="modalCategory" class="text-xs font-mono text-brand-accent font-bold uppercase">CATÉGORIE</span>
+          <h3 id="modalTitle" class="text-xl font-bold text-brand-navy">Titre du Projet</h3>
+        </div>
+        <button onclick="closeProjectModal()" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-6">
+        <div id="modalImageContainer" class="rounded-xl overflow-hidden bg-slate-900 aspect-video relative flex items-center justify-center">
+          <div id="modalMediaSlot" class="w-full h-full flex items-center justify-center"></div>
+          <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded text-white text-xs font-mono z-10" id="modalMachine">
+            Machine
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-mono">Contexte</h4>
+          <p id="modalDescription" class="text-xs text-slate-600 leading-relaxed">
+            Description détaillée du projet.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+          <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+            <span class="text-slate-400 block text-[10px]">APPLICATION</span>
+            <span id="modalMaterial" class="font-bold text-slate-800">-</span>
+          </div>
+          <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+            <span class="text-slate-400 block text-[10px]">TOLÉRANCE / CONTRÔLE</span>
+            <span id="modalTolerance" class="font-bold text-slate-800">-</span>
+          </div>
+          <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+            <span class="text-slate-400 block text-[10px]">OUTIL PRINCIPAL</span>
+            <span id="modalSoftware" class="font-bold text-slate-800">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex justify-end">
+        <button onclick="closeProjectModal()" class="px-5 py-2 rounded-lg bg-slate-200 text-slate-700 text-xs font-semibold hover:bg-slate-300 transition">
+          Fermer la fiche
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const projectsData = {
+      oeuf: {
+        category: "Bureau d'Études et Atelier",
+        title: "Projet Œuf Mystère de 2ème année",
+        machine: "Tournage, Fraisage et ajustage",
+        type: "svg",
+        description: "Étude de la cinématique et modélisation complète sous Creo. Réalisation des pièces en atelier d'usinage avec ajustements fonctionnels serrés pour assurer un assemblage fonctionnel et un mouvement fluide.",
+        material: "Alliage d'aluminium et polymère",
+        tolerance: "Ajustements serrés (H7/g6)",
+        software: "PTC Creo Parametric"
+      },
+      stage: {
+        category: "Métrologie Industrielle",
+        title: "Stage au service métrologie SIM",
+        machine: "Machine à mesurer tridimensionnelle (MMT) et cales",
+        type: "image",
+        imageUrl: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=1200&q=80",
+        description: "Prise de mesures sur pièces usinées, vérification de la conformité géométrique par rapport aux plans d'études et utilisation des instruments de contrôle en salle climatisée chez SIM à Châtellerault.",
+        material: "Pièces industrielles usinées",
+        tolerance: "Normes de cotation ISO GPS",
+        software: "Logiciel MMT et Pack Office"
+      }
+    };
+
+    const eggSvgTemplate = `
+      <svg viewBox="0 0 400 220" class="w-full h-full text-brand-accent/70" fill="none" stroke="currentColor">
+        <defs>
+          <pattern id="eggCadGridModal" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#eggCadGridModal)" />
+        <line x1="200" y1="15" x2="200" y2="205" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6,4" />
+        <line x1="80" y1="125" x2="320" y2="125" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6,4" />
+        <path d="M 200,25 C 265,25 305,95 305,145 C 305,185 260,200 200,200 C 140,200 95,185 95,145 C 95,95 135,25 200,25 Z" stroke="#f97316" stroke-width="2.5" />
+        <path d="M 200,45 C 245,45 285,100 285,145 C 285,178 245,185 200,185 C 155,185 115,178 115,145 C 115,100 155,45 200,45 Z" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4,3" />
+        <ellipse cx="200" cy="125" rx="90" ry="16" stroke="#94a3b8" stroke-width="1.5" />
+        <ellipse cx="200" cy="85" rx="68" ry="11" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+        <ellipse cx="200" cy="165" rx="72" ry="12" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+        <circle cx="200" cy="125" r="14" stroke="#f97316" stroke-width="2" />
+        <line x1="200" y1="100" x2="200" y2="150" stroke="#f97316" stroke-width="2" />
+        <line x1="175" y1="125" x2="225" y2="125" stroke="#f97316" stroke-width="2" />
+        <text x="310" y="40" fill="#38bdf8" font-size="11" font-family="monospace">R12.5</text>
+        <text x="315" y="130" fill="#f97316" font-size="11" font-family="monospace">H7/g6</text>
+        <text x="25" y="30" fill="#94a3b8" font-size="10" font-family="monospace">MODÈLE CAO CREO 3D</text>
+      </svg>
+    `;
+
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    let isPlaying = false;
+    let progressTimer = null;
+    let currentSeconds = 0;
+    const totalSeconds = 138;
+
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playSmallBtn = document.getElementById('playSmallBtn');
+    const playIcon = document.getElementById('playIcon');
+    const progressBar = document.getElementById('progressBar');
+    const timerDisplay = document.getElementById('timerDisplay');
+    const videoCurrentTime = document.getElementById('videoCurrentTime');
+    const videoOverlayStatus = document.getElementById('videoOverlayStatus');
+
+    function togglePlay() {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        playIcon.classList.replace('fa-play', 'fa-pause');
+        playSmallBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        videoOverlayStatus.classList.remove('hidden');
+        videoOverlayStatus.innerText = "Lecture simulée en cours";
+        
+        progressTimer = setInterval(() => {
+          if (currentSeconds < totalSeconds) {
+            currentSeconds++;
+            updateVideoUI();
+          } else {
+            resetVideo();
+          }
+        }, 1000);
+      } else {
+        pauseVideoUI();
+      }
+    }
+
+    function pauseVideoUI() {
+      isPlaying = false;
+      playIcon.classList.replace('fa-pause', 'fa-play');
+      playSmallBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+      videoOverlayStatus.innerText = "Pause";
+      clearInterval(progressTimer);
+    }
+
+    function resetVideo() {
+      currentSeconds = 0;
+      pauseVideoUI();
+      updateVideoUI();
+    }
+
+    function updateVideoUI() {
+      const pct = (currentSeconds / totalSeconds) * 100;
+      progressBar.style.width = pct + '%';
+      const m = Math.floor(currentSeconds / 60);
+      const s = currentSeconds % 60;
+      const formatted = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+      timerDisplay.innerText = `${formatted} / 02:18`;
+      videoCurrentTime.innerText = `${formatted} / 02:18`;
+    }
+
+    playPauseBtn.addEventListener('click', togglePlay);
+    playSmallBtn.addEventListener('click', togglePlay);
+
+    function selectChapter(num, timeStr, title, sub) {
+      document.getElementById('videoActiveTitle').innerText = `Chapitre ${num} : ${title}`;
+      document.getElementById('videoActiveSubtitle').innerText = sub;
+      
+      const parts = timeStr.split(':');
+      currentSeconds = parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+      updateVideoUI();
+
+      if (!isPlaying) {
+        togglePlay();
+      }
+    }
+
+    const projectModal = document.getElementById('projectModal');
+    function openProjectModal(key) {
+      const data = projectsData[key];
+      if (!data) return;
+
+      document.getElementById('modalCategory').innerText = data.category;
+      document.getElementById('modalTitle').innerText = data.title;
+      document.getElementById('modalMachine').innerText = data.machine;
+      document.getElementById('modalDescription').innerText = data.description;
+      document.getElementById('modalMaterial').innerText = data.material;
+      document.getElementById('modalTolerance').innerText = data.tolerance;
+      document.getElementById('modalSoftware').innerText = data.software;
+
+      const mediaSlot = document.getElementById('modalMediaSlot');
+      if (data.type === 'svg') {
+        mediaSlot.innerHTML = eggSvgTemplate;
+      } else {
+        mediaSlot.innerHTML = `<img src="${data.imageUrl}" alt="${data.title}" class="w-full h-full object-cover">`;
+      }
+
+      projectModal.classList.remove('hidden');
+    }
+
+    function closeProjectModal() {
+      projectModal.classList.add('hidden');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeProjectModal();
+    });
+    projectModal.addEventListener('click', (e) => {
+      if (e.target === projectModal) closeProjectModal();
+    });
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contactForm').reset();
+      const notice = document.getElementById('formSuccessNotice');
+      notice.classList.remove('hidden');
+      setTimeout(() => {
+        notice.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
