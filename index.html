@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paul Brisset - Portfolio BUT GMP </title>
+  <title>Paul Brisset - Portfolio BUT GMP</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -133,7 +133,7 @@
             <a href="#video-pitch" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-brand-accent text-white font-semibold hover:bg-brand-accentHover shadow-md transition-all">
               <i class="fa-solid fa-play mr-2 text-sm"></i> Visionner ma vidéo pitch
             </a>
-            <a href="cv.pdf" download="CV_Paul_Brisset.pdf" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-slate-100 text-slate-800 font-semibold hover:bg-slate-200 border border-slate-300 transition-all">
+            <a href="./cv.pdf" target="_blank" download="CV_Paul_Brisset.pdf" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-slate-100 text-slate-800 font-semibold hover:bg-slate-200 border border-slate-300 transition-all">
               <i class="fa-solid fa-file-pdf mr-2 text-slate-600"></i> Télécharger mon CV
             </a>
           </div>
@@ -195,102 +195,21 @@
       
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="text-brand-accent uppercase tracking-wider text-xs font-mono font-bold">Vidéo Pitch et Présentation</span>
-        <h2 class="text-3xl font-bold mt-2">Mon parcours et ma démarche en 2 minutes</h2>
+        <h2 class="text-3xl font-bold mt-2">Mon parcours et ma démarche d'ingénierie</h2>
         <p class="text-slate-400 mt-3 text-sm">
           Cette vidéo résume mes aptitudes techniques, mon autonomie de travail et ma motivation pour l'alternance en entreprise.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        
-        <div class="lg:col-span-8 bg-black rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
-          <div class="relative aspect-video flex items-center justify-center bg-slate-950 group">
-            
-            <div id="videoPlaceholder" class="absolute inset-0 bg-cover bg-center flex flex-col justify-between p-6" style="background-image: linear-gradient(rgba(13,37,58,0.7), rgba(8,23,38,0.9)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80');">
-              <div class="flex justify-between items-center text-xs font-mono">
-                <span class="px-2.5 py-1 rounded bg-black/60 backdrop-blur border border-white/20 text-white">PORTFOLIO PAUL BRISSET</span>
-                <span id="videoCurrentTime" class="px-2 py-0.5 rounded bg-black/60 text-slate-300">00:00 / 02:18</span>
-              </div>
-              <div class="text-center space-y-2">
-                <p id="videoActiveTitle" class="text-lg font-semibold text-white drop-shadow">Chapitre 1 : Présentation personnelle</p>
-                <p id="videoActiveSubtitle" class="text-xs text-slate-300">Parcours académique en Génie Mécanique et Productique</p>
-              </div>
-              <div class="flex items-center justify-between text-xs text-slate-400">
-                <span>Résolution : 1080p</span>
-                <span>Projet BUT 3</span>
-              </div>
-            </div>
-
-            <button id="playPauseBtn" class="z-20 w-20 h-20 rounded-full bg-brand-accent/90 hover:bg-brand-accent text-white flex items-center justify-center text-2xl shadow-xl transition-transform transform hover:scale-105">
-              <i id="playIcon" class="fa-solid fa-play ml-1"></i>
-            </button>
-
-            <div id="videoOverlayStatus" class="hidden absolute top-4 right-4 z-20 bg-emerald-500 text-white text-xs px-3 py-1 rounded font-mono">
-              Lecture simulée en cours
-            </div>
-          </div>
-
-          <div class="p-4 bg-slate-950 border-t border-slate-800 space-y-3">
-            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden cursor-pointer" id="progressBarContainer">
-              <div id="progressBar" class="bg-brand-accent h-full w-0 transition-all duration-300"></div>
-            </div>
-            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
-              <div class="flex items-center space-x-4">
-                <button id="playSmallBtn" class="text-white hover:text-brand-accent"><i class="fa-solid fa-play"></i></button>
-                <span id="timerDisplay">00:00 / 02:18</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <span class="hover:text-white cursor-pointer"><i class="fa-solid fa-volume-high"></i></span>
-                <span class="hover:text-white cursor-pointer"><i class="fa-solid fa-expand"></i></span>
-              </div>
-            </div>
-          </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="relative aspect-video bg-black rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+          <video class="w-full h-full object-cover" controls poster="./photo_paul_brisset.png" preload="metadata">
+            <source src="./presentation.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+          </video>
         </div>
-
-        <div class="lg:col-span-4 space-y-4">
-          <div class="bg-slate-800/90 rounded-xl p-5 border border-slate-700">
-            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 font-mono flex items-center justify-between">
-              Chapitres de la vidéo <i class="fa-solid fa-list-ol text-brand-accent"></i>
-            </h4>
-            
-            <div class="space-y-2">
-              <button onclick="selectChapter(1, '00:00', 'Présentation personnelle', 'Parcours académique en Génie Mécanique et Productique')" class="chapter-btn w-full text-left p-3 rounded-lg bg-slate-700/60 hover:bg-slate-700 border border-slate-600 transition flex items-start gap-3">
-                <span class="text-xs font-mono text-brand-accent font-bold mt-0.5">01</span>
-                <div>
-                  <p class="text-xs font-semibold text-white">Mon parcours</p>
-                  <p class="text-[11px] text-slate-400">Polytech Tours et cursus BUT GMP à Orléans</p>
-                </div>
-              </button>
-
-              <button onclick="selectChapter(2, '00:45', 'Stage en métrologie SIM', 'Contrôle tridimensionnel et instruments de précision à Châtellerault')" class="chapter-btn w-full text-left p-3 rounded-lg bg-slate-800 hover:bg-slate-700/60 border border-slate-700 transition flex items-start gap-3">
-                <span class="text-xs font-mono text-brand-accent font-bold mt-0.5">02</span>
-                <div>
-                  <p class="text-xs font-semibold text-white">Stage en métrologie</p>
-                  <p class="text-[11px] text-slate-400">Expérience professionnelle chez SIM à Châtellerault</p>
-                </div>
-              </button>
-
-              <button onclick="selectChapter(3, '01:30', 'Projet Œuf Mystère', 'Conception Creo et fabrication d\'atelier')" class="chapter-btn w-full text-left p-3 rounded-lg bg-slate-800 hover:bg-slate-700/60 border border-slate-700 transition flex items-start gap-3">
-                <span class="text-xs font-mono text-brand-accent font-bold mt-0.5">03</span>
-                <div>
-                  <p class="text-xs font-semibold text-white">Projet Œuf Mystère</p>
-                  <p class="text-[11px] text-slate-400">Modélisation et validation dimensionnelle</p>
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-brand-industrial/40 rounded-xl p-4 border border-blue-900 text-xs text-slate-300 space-y-2">
-            <p class="font-bold text-white flex items-center gap-1.5">
-              <i class="fa-solid fa-circle-info text-sky-400"></i> Intégration vidéo :
-            </p>
-            <p class="leading-relaxed">
-              Ce lecteur interactif permet de visionner le pitch et de naviguer par points clés. Il peut être lié directement à un fichier mp4 ou une vidéo hébergée.
-            </p>
-          </div>
-        </div>
-
       </div>
+
     </div>
   </section>
 
@@ -555,7 +474,7 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <a href="cv.pdf" download="CV_Paul_Brisset.pdf" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-brand-navy text-white text-xs font-semibold hover:bg-brand-accent transition shadow-sm">
+          <a href="./cv.pdf" target="_blank" download="CV_Paul_Brisset.pdf" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-brand-navy text-white text-xs font-semibold hover:bg-brand-accent transition shadow-sm">
             <i class="fa-solid fa-file-pdf mr-2"></i> Télécharger le CV (PDF)
           </a>
           <a href="#contact" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 border border-slate-300 transition">
@@ -570,7 +489,7 @@
           <div class="md:col-span-4 bg-[#1b3a57] text-white p-6 sm:p-8 flex flex-col justify-between space-y-6">
             <div class="space-y-6">
               <div class="w-32 h-40 mx-auto rounded-lg overflow-hidden border-2 border-white/40 shadow-md bg-slate-700">
-                <img src="photo_paul_brisset.png" alt="Photo Paul Brisset" class="w-full h-full object-cover">
+                <img src="./photo_paul_brisset.png" alt="Photo Paul Brisset" class="w-full h-full object-cover">
               </div>
 
               <div>
@@ -889,80 +808,6 @@
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
-    let isPlaying = false;
-    let progressTimer = null;
-    let currentSeconds = 0;
-    const totalSeconds = 138;
-
-    const playPauseBtn = document.getElementById('playPauseBtn');
-    const playSmallBtn = document.getElementById('playSmallBtn');
-    const playIcon = document.getElementById('playIcon');
-    const progressBar = document.getElementById('progressBar');
-    const timerDisplay = document.getElementById('timerDisplay');
-    const videoCurrentTime = document.getElementById('videoCurrentTime');
-    const videoOverlayStatus = document.getElementById('videoOverlayStatus');
-
-    function togglePlay() {
-      isPlaying = !isPlaying;
-      if (isPlaying) {
-        playIcon.classList.replace('fa-play', 'fa-pause');
-        playSmallBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
-        videoOverlayStatus.classList.remove('hidden');
-        videoOverlayStatus.innerText = "Lecture simulée en cours";
-        
-        progressTimer = setInterval(() => {
-          if (currentSeconds < totalSeconds) {
-            currentSeconds++;
-            updateVideoUI();
-          } else {
-            resetVideo();
-          }
-        }, 1000);
-      } else {
-        pauseVideoUI();
-      }
-    }
-
-    function pauseVideoUI() {
-      isPlaying = false;
-      playIcon.classList.replace('fa-pause', 'fa-play');
-      playSmallBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
-      videoOverlayStatus.innerText = "Pause";
-      clearInterval(progressTimer);
-    }
-
-    function resetVideo() {
-      currentSeconds = 0;
-      pauseVideoUI();
-      updateVideoUI();
-    }
-
-    function updateVideoUI() {
-      const pct = (currentSeconds / totalSeconds) * 100;
-      progressBar.style.width = pct + '%';
-      const m = Math.floor(currentSeconds / 60);
-      const s = currentSeconds % 60;
-      const formatted = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-      timerDisplay.innerText = `${formatted} / 02:18`;
-      videoCurrentTime.innerText = `${formatted} / 02:18`;
-    }
-
-    playPauseBtn.addEventListener('click', togglePlay);
-    playSmallBtn.addEventListener('click', togglePlay);
-
-    function selectChapter(num, timeStr, title, sub) {
-      document.getElementById('videoActiveTitle').innerText = `Chapitre ${num} : ${title}`;
-      document.getElementById('videoActiveSubtitle').innerText = sub;
-      
-      const parts = timeStr.split(':');
-      currentSeconds = parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
-      updateVideoUI();
-
-      if (!isPlaying) {
-        togglePlay();
-      }
-    }
 
     const projectModal = document.getElementById('projectModal');
     function openProjectModal(key) {
